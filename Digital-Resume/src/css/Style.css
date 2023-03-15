@@ -1,84 +1,124 @@
-
-body{margin: 0;
+body {
+    margin: 0;
     box-sizing: border-box;
-    background-image: url(https://png.pngtree.com/thumb_back/fw800/back_our/20190617/ourmid/pngtree-ink-style-job-search-resume-poster-background-template-image_128247.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
- 
+
+    font-size: large;
+
 }
 
-.container { 
+.container {
     margin-top: -25px;
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1.5fr 3fr;
-    grid-template-rows: 20px 0.6fr 1fr 0.5fr;
+    grid-template-rows: 20px 0.6fr 1fr 0.2fr;
     grid-template-areas: "nav nav nav nav"
-    "main main main main"
-    "profile profile section section"
-    "footer footer footer footer";
+        "main main main main"
+        "profile profile section section"
+        "footer footer footer footer";
     gap: 5px;
-    
+
 }
 
-nav{ 
+@media screen and (max-width: 320px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+
+
+
+    }
+
+}
+
+nav {
     grid-area: nav;
-    
+
 }
 
- ul{margin: 0; 
+ul {
+    margin: 0;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     list-style: none;
-   
-}
-
-a{
-text-decoration: none;
-color: blue;
 
 }
 
-li{
+a {
+    font-size: larger;
+    text-decoration: none;
+    color: blue;
+
+}
+
+li {
     padding-right: 1.5em;
     position: relative;
-   
-}
-main{
-    background-image: url(https://tse2.mm.bing.net/th?id=OIP.Oy1SGN0xc2HOXZ7WavIOYQHaEk&pid=Api&P=0);
-    background-size:auto;
-    margin-left:0 ;
-    grid-area: main ;
+
 }
 
-img{ height: 250px;
-    width: 200px;
-    border-radius: 100%;
+main {
+    background-image: url(https://tse3.mm.bing.net/th?id=OIP.C-lJoagtBtZQ2_hTCHq2mgHaE7&pid=Api&P=0);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 0;
+    padding-left: 20px;
+    color: whitesmoke;
+    text-align: center;
+    grid-area: main;
 }
- 
-.profile{
-     margin-left: 30px;
+
+/*added polygon shape using bennettfeely.com/clip/ */
+img {
+    clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+
+}
+
+
+.profile {
+    background-color: #A07855FF;
+    padding-left: 30px;
     grid-area: profile;
 }
 
-.section{
-
-    grid-area: section;
+.profile h2 {
+    text-decoration: underline;
+    text-shadow: 5px 0.2px whitesmoke;
+    margin: 10px;
+    padding: 10px;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 5px 12px black;
 }
 
-footer{margin-left: 30px;
+
+.section {
+    background-color: #D4B996FF;
+    padding-left: 30px;
+    grid-area: section;
+    
+}
+
+.section h2 {
+    background-color: #D4B996FF;
+    text-align: center;
+    text-shadow: 5px 0.2px whitesmoke;
+    margin: 10px;
+    padding: 10px;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 5px 12px black;
+}
+
+
+footer {
+    padding-left: 15px;
+    text-align: center;
     margin-bottom: 60px;
     grid-area: footer;
+    background-color: #D4B996FF;
 }
-
-
-
-
-
-
-  
-
-  
-
-
