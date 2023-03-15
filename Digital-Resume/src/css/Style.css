@@ -1,0 +1,84 @@
+
+body{margin: 0;
+    box-sizing: border-box;
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/back_our/20190617/ourmid/pngtree-ink-style-job-search-resume-poster-background-template-image_128247.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+}
+
+.container { 
+    margin-top: -25px;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1.5fr 3fr;
+    grid-template-rows: 20px 0.6fr 1fr 0.5fr;
+    grid-template-areas: "nav nav nav nav"
+    "main main main main"
+    "profile profile section section"
+    "footer footer footer footer";
+    gap: 5px;
+    
+}
+
+nav{ 
+    grid-area: nav;
+    
+}
+
+ ul{margin: 0; 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+   
+}
+
+a{
+text-decoration: none;
+color: blue;
+
+}
+
+li{
+    padding-right: 1.5em;
+    position: relative;
+   
+}
+main{
+    background-image: url(https://tse2.mm.bing.net/th?id=OIP.Oy1SGN0xc2HOXZ7WavIOYQHaEk&pid=Api&P=0);
+    background-size:auto;
+    margin-left:0 ;
+    grid-area: main ;
+}
+
+img{ height: 250px;
+    width: 200px;
+    border-radius: 100%;
+}
+ 
+.profile{
+     margin-left: 30px;
+    grid-area: profile;
+}
+
+.section{
+
+    grid-area: section;
+}
+
+footer{margin-left: 30px;
+    margin-bottom: 60px;
+    grid-area: footer;
+}
+
+
+
+
+
+
+  
+
+  
+
+
