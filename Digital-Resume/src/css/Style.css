@@ -116,21 +116,20 @@ img {
 
 
 footer {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    font-style: italic;
     padding-left: 15px;
     grid-area: footer;
     background-color: #D4B996FF;
 }
 
-.contact{
-    text-align: start;
-}
 
 
-.form h2{
-    text-align: center;
+ .form {
+    margin: 30px black;
+    padding: 0px black;
+    box-shadow: 10px 10px 10px 20px black;
 }
 
-form .icons{
-    
-    text-align: end;
-}
