@@ -39,8 +39,7 @@ nav {
 ul {
     margin: 0;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content:center;
     list-style: none;
 
 }
@@ -48,14 +47,33 @@ ul {
 a {
     font-size: larger;
     text-decoration: none;
-    color: blue;
-
+    color: white;
+    
+   
 }
 
 li {
     padding-right: 1.5em;
     position: relative;
 
+}
+
+li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: red;
+    margin: auto;
+    display: block;
+}
+
+li a:hover::after{
+    width: 100px;
+    transition: width 0.3s linear;
+    
+}
+li a:hover{
+    color:#A07855FF;
 }
 
 main {
@@ -125,11 +143,21 @@ footer {
     background-color: #D4B996FF;
 }
 
+footer a{
+    color: black;
+}
 
 
  .form {
     margin: 30px black;
     padding: 0px black;
     box-shadow: 10px 10px 10px 20px black;
+}
+
+.Icons{
+    margin-top: 20px;
+    margin-right: 40px;
+    display: flexbox;
+    j
 }
 
