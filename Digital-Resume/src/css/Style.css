@@ -117,8 +117,20 @@ img {
 
 footer {
     padding-left: 15px;
-    text-align: center;
-    margin-bottom: 60px;
     grid-area: footer;
     background-color: #D4B996FF;
+}
+
+.contact{
+    text-align: start;
+}
+
+
+.form h2{
+    text-align: center;
+}
+
+form .icons{
+    
+    text-align: end;
 }
