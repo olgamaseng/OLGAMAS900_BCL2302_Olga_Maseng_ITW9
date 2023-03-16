@@ -1,7 +1,6 @@
 body {
     margin: 0;
     box-sizing: border-box;
-
     font-size: large;
 
 }
@@ -77,11 +76,6 @@ main {
     grid-area: main;
 }
 
-@media only screen and (max-width: 320px){
-   main{ background-image: url(https://tse3.mm.bing.net/th?id=OIP.C-lJoagtBtZQ2_hTCHq2mgHaE7&pid=Api&P=0);
-  background-size: cover;
-}
-}
 
 
 /*added polygon shape using bennettfeely.com/clip/ */
@@ -101,7 +95,6 @@ img {
 
 .profile h2 {
     text-decoration: underline;
-    text-shadow: 5px 0.2px whitesmoke;
     margin: 10px;
     padding: 10px;
     width: 50%;
@@ -118,9 +111,9 @@ img {
 }
 
 .section h2 {
+    text-decoration: underline;
     background-color: #D4B996FF;
     text-align: center;
-    text-shadow: 5px 0.2px whitesmoke;
     margin: 10px;
     padding: 10px;
     width: 50%;
@@ -137,6 +130,7 @@ footer {
     padding-left: 15px;
     grid-area: footer;
     background-color: #D4B996FF;
+    
 }
 
 footer a{
@@ -148,11 +142,94 @@ footer a{
     margin: 30px black;
     padding: 0px black;
     box-shadow: 10px 10px 10px 20px black;
+    
 }
+
 
 .Icons{
     margin-top: 20px;
     margin-right: 40px;
     display: flexbox;
+    
+}
+
+@media only screen and (max-width: 320px){
+    main {
+        background-image: url(https://tse3.mm.bing.net/th?id=OIP.C-lJoagtBtZQ2_hTCHq2mgHaE7&pid=Api&P=0); 
+        background-size: 900px;    
+    }
+    
+ main li{
+    font-size: 10px;
+    margin-left: -8px;
+ }
+
+ img{
+    height: 60px;
+    width: 60px;
+ }
+
+ .section h2{
+   margin-left: -20px;
+   background-color: #D4B996FF;
+   text-align: center;
+   padding: 10px;
+   width: 89%;
+   border-radius: 15px;
+   box-shadow: 5px 12px black;
+ }
+
+ body{
+    margin-right: 6px;
+ }
+ 
+ .profile li{
+font-size: medium;
+
+ }
+  
+ .profile h2{
+    text-decoration: underline;
+    margin-right: 25px;
+    padding: 10px;
+    width: 58px;
+    border-radius: 10px;
+    box-shadow: 5px 12px black;
+ }
+#skills li{
+    display: list-item
+}
+
+footer{
+    display:flex;
+    flex-direction: column;
+}
+.form{
+    margin: 15px;
+    padding: 10px ;
+   
+}
+}
+
+    @media only screen and (max-width: 768px){
+
+   
+     .section h2{
+        margin-left: -20px;
+        background-color: #D4B996FF;
+        text-align: center;
+        padding: 10px;
+        width: 89%;
+        border-radius: 15px;
+        box-shadow: 5px 12px black;}
+
+footer{
+    display: inline;
+}
+
+
+.form{
+ margin-right: 25px;
+}
     
 }
